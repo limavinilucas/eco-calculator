@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Economia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <hr>
+            <h1>
+                Calculadora de Economia
+            </h1>
+        <hr>
+            <p class="description">
+                Calcule aqui a economia que você poderia estar fazendo com as nossas automações!
+            </p>
+        <hr>
+        <div class="container">    
+            <label for="value">Conta de Luz (R$):</label>
+            <input type="number" id="value" placeholder="Ex: 100.00">
+            <label for="parameter">Selecione a automação:</label>
+            <select id="parameter">
+                <option value="1"> Lâmpadas Inteligentes (Smart Lights) </option>
+                <option value="2"> Ar-condicionado Inteligente (Smart Air) </option>
+                <option value="3"> Aquecimento Solar (*Solar Water Heating) </option>
+                <option value="4"> Smart Lights & Smart Air</option>
+                <option value="5"> Smart Lights & Solar Water Heating </option>
+                <option value="6"> Smart Air & Solar Water Heating</option>
+            </select>
+        </div>
+
+        <button class="button-action" onclick="resolveCalculations()">Calcular</button>
+        <br>
+        <hr>
+        <h2>
+            Valor com desconto (R$):
+            <span id="result">--</span>
+        </h2>
+        <hr>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+<footer>
+    <a class="dontclick" href="referenzas.html">NÃO CLIQUE AQUI!</a>
+</footer>
+</html>
